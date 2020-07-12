@@ -1,0 +1,14 @@
+create index transaction_date_index
+       on transaction (date_of_transaction)
+
+create index means_of_payment_index
+       on transaction (means_of_payment)
+
+create index stores_transaction_index
+       on purchases (store_id_purchases)
+
+create index customers_city_index
+       on customer (customer_city)
+
+create index transaction_time_index
+       on transaction (time_of_transaction)
